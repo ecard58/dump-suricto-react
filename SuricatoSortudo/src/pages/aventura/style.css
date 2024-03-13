@@ -1,0 +1,20 @@
+h2 {
+  color: var(--primeira-cor);
+}
+h3 {
+  color: black;
+  background-color: rgba(212, 191, 106, 0.7);
+}
+
+.paragrafo {
+  color: black;
+  background-color: rgba(212, 191, 106, 0.7);
+}
+
+.aventura {
+  background-color: var(--terceira-cor);
+  margin-bottom: 20px;
+}
+.carousel-caption {
+  left: 33%;
+}

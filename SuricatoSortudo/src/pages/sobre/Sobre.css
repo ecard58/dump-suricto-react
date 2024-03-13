@@ -1,0 +1,19 @@
+.Sobre p {
+  text-align: center;
+  font-size: 1.7em;
+  line-height: 1.8em;
+  margin-bottom: 1em;
+  background-color: #bd7834;
+  color: #331b1c;
+}
+h1 {
+  color: #331b1c;
+}
+.column-background-4 {
+  background-color: var(--quarta-cor);
+  height: 800px;
+  margin-top: 7vh;
+}
+p {
+  font-size: 20px;
+}

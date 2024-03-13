@@ -1,0 +1,69 @@
+:root {
+  --primeira-cor: #061a06;
+  --segunda-cor: #0c432e;
+  --terceira-cor: #bd7834;
+  --quarta-cor: #d4bf6a;
+  --quinta-cor: #e2e2ac;
+}
+
+.dark-mode:root {
+  --primeira-cor: #331b1c;
+  --segunda-cor: #583c2f;
+  --terceira-cor: #865c44;
+  --quarta-cor: #ba8c59;
+  --quinta-cor: #d6c271;
+}
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body {
+  background-color: var(--quinta-cor);
+}
+
+.column-background-1 {
+  background-color: var(--quarta-cor);
+}
+
+.column-background-2 {
+  background-color: var(--terceira-cor);
+}
+
+.column-background-3 {
+  background-color: var(--quarta-cor);
+}
+
+.lista-lateral {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.lista-lateral a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.lista-lateral li {
+  position: relative;
+  padding-top: 8px;
+}
+
+.lista-lateral li a:hover {
+  display: block;
+  color: white;
+  background-color: var(--segunda-cor);
+}
+
+.nav-link,
+.nav-link:hover,
+.nav-link.active {
+  color: white !important;
+}
+
+.product-image {
+  height: 200px;
+  object-fit: contain;
+}

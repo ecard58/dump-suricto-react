@@ -1,0 +1,93 @@
+.nossa-equipe {
+    padding: 30px 0 120px;
+    margin-bottom: 50px;
+    background-color: var(--quarta-cor);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.nossa-equipe .foto {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.nossa-equipe .foto::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    background-color: var(--segunda-cor);
+    position: absolute;
+    bottom: 100%;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+
+.nossa-equipe:hover .foto::before {
+    height: 100%;
+}
+
+.nossa-equipe .foto img {
+    width: 100%;
+    height: 90px;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+
+.nossa-equipe:hover .foto img {
+    box-shadow: 0 0 0 5px var(--terceira-cor);
+}
+
+.nossa-equipe .conteudo-equipe {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+}
+
+.nossa-equipe .redes-sociais {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    background-color: var(--segunda-cor);
+    position: absolute;
+    bottom: -250px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nossa-equipe:hover .redes-sociais {
+    bottom: 5px;
+}
+
+.nossa-equipe .redes-sociais li {
+    display: inline-block;
+    margin: 3px;
+}
+
+.nossa-equipe .redes-sociais a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--terceira-cor);
+    text-align: center;
+    border: 1px solid var(--terceira-cor);
+    padding: 1px 100px;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.nossa-equipe .redes-sociais a:hover {
+    background-color: var(--terceira-cor);
+    color: var(--segunda-cor);
+    transform: translateY(-10px); 
+}
+
